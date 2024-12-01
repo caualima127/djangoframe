@@ -1,0 +1,121 @@
+#desafio django rest framework
+class Livro:
+    def __init__(self, codigo, titulo, autor, isbn, preco, codfornecedor):
+        self.codigo = codigo
+        self.titulo = titulo
+        self.autor = autor
+        self.isbn = isbn
+        self.preco = preco
+        self.codfornecedor = codfornecedor
+
+    def inserir(self):
+        pass  
+
+    def excluir(self):
+        pass  
+
+    def alterar(self):
+        pass  
+
+    def consultar(self):
+        pass  
+
+class Pedido:
+    def __init__(self, codigo, datapedido, listaLivro, quantidade, valor):
+        self.codigo = codigo
+        self.datapedido = datapedido
+        self.listaLivro = listaLivro 
+        self.quantidade = quantidade
+        self.valor = valor
+
+    def calcValor(self):
+        pass  
+
+class Balconista:
+    def __init__(usuario,senha,nivelacesso):
+        self.usuario = usuario
+        self.senha = senha
+        self.nivelacesso = nivelacesso
+
+    def login(self):
+      pass
+    def inserir(self):
+      pass
+    def excluir(self):
+      pass
+    def alterar(self):
+      pass
+    def consultar(self):
+      pass
+    def remessacliente(self):
+      pass
+    def efetuarpedidocliente(self):
+      pass
+
+class cliente:
+    def __init__(codigo,nome,endereço,cidade,estado,cep,telefone):
+      self.codigo = codigo
+      self.nome = nome
+      self.endereço = endereço
+      self.cidade = cidade
+      self.estado = estado
+      self.cep = cep
+      self.telefone = telefone
+
+    def inserir(self):
+      pass
+    def excluir(self):
+      pass
+    def alterar(self):
+      pass
+    def consultar(self):
+      pass
+    def efetuarpedidocliente(self):
+      pass
+    def efetuarpagamento(self):
+      pass
+
+
+class PedidoCliente:
+    def __init__(codcliente,dataremessa):
+      self.codcliente = codcliente
+      self.dataremessa = dataremessa
+
+    def pagamentocliente(self):
+      pass
+    def remessacliente(self):
+      pass
+    def recuperarpedcliente(self):
+      pass
+
+
+class PedidoFornecedor:
+    def __init__(codfornecedor,datarecebimento):
+      self.codfornecedor = codfornecedor
+      self.datarecebimento = datarecebimento
+
+    def pagamentofornecedor(self):
+      pass
+    def recuperarpedfornecedor(self):
+      pass
+
+
+
+class Fornecedor:
+    def __init__(codigo,nome,endereço,cidade,estado,cep,telefone,pedfor,cnpj):
+      self.codigo = codigo
+      self.nome = nome
+      self.endereço = endereço
+      self.cidade = cidade
+      self.estado = estado
+      self.cep = cep
+      self.telefone = telefone
+
+    def inserir(self):
+      pass
+    def excluir(self):
+      pass
+    def alterar(self):
+      pass
+    def consultar(self):
+      pass
